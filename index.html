@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+        <!--  All snippets are MIT license http://bootdey.com/license -->
+        <title>NavBar Menu Dropdowns - Bootdey.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/base.css" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/navbar.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/fontawesome-free-6.1.1-web/css/all.min.css"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-expand-md nav-custom" role="navigation">
+            <a class="navbar-brand white-letter logo">LOGO WEB</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse_1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link white-letter text-center d-flex"
+                            href="#"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                summarize
+                            </span>
+                            <span class="nav-option">Tổng quan</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                widgets
+                            </span>
+                            <span class="nav-option">Hàng hóa</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                            id="dropdown2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                coffee
+                            </span>
+                            <span class="nav-option">Nhà hàng</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                published_with_changes
+                            </span>
+                            <span class="nav-option">Giao dịch</span></a
+                        >
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                            id="dropdown2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                handshake
+                            </span>
+                            <span class="nav-option">Đối tác</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                payments
+                            </span>
+                            <span class="nav-option">Thu & Chi</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link white-letter dropdown-toggle d-flex align-items-center"
+                            id="dropdown2"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            <span
+                                class="material-symbols-outlined custom-margin"
+                            >
+                                bar_chart
+                            </span>
+                            <span class="nav-option">Báo cáo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul
+                class="nav justify-content-end sub-nav collapse navbar-collapse"
+            >
+                <li class="nav-item">
+                    <a class="nav-link red-letter" href="#">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link red-letter" href="#">
+                        <span class="material-symbols-outlined">
+                            assignment
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link red-letter" href="#">
+                        <span class="material-symbols-outlined">
+                            pin_drop
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link red-letter">
+                        <span class="material-symbols-outlined"> redeem </span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link red-letter">
+                        <span class="material-symbols-outlined">
+                            settings
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row badge-light container-fluid">
+            <div class="col col-12">
+                <span class="letter-font blue-letter">TỔNG QUAN</span>
+            </div>
+        </div>
+        <div class="content py-2">
+            <!-- SUMMARY CONTAINER -->
+            <div class="container-fluid container-md summary-container mb-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="row container-fluid">
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        border_color
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">10</div>
+                                    <div class="gray-letter">ĐƠN HÀNG</div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        shopping_cart
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">757,800</div>
+                                    <div class="gray-letter">DOANH THU</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row container-fluid">
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        reply
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">7</div>
+                                    <div class="gray-letter">HỦY TRẢ ĐỒ</div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        reply_all
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">180,000</div>
+                                    <div class="gray-letter">
+                                        GIÁ TRỊ TRẢ LẠI
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row container-fluid">
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        payments
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">757,500</div>
+                                    <div class="gray-letter">TIỀN MẶT</div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">0</div>
+                                    <div class="gray-letter">
+                                        TÀI KHOẢN KHÁC
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row container-fluid">
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon my-2 white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        perm_contact_calendar
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">0</div>
+                                    <div class="gray-letter">GHI NỢ</div>
+                                </div>
+                            </div>
+                            <div
+                                class="col-md-6 col-lg-6 border badge-light d-flex align-items-center summary-container-item"
+                            >
+                                <div
+                                    class="mx-4 summary-container-icon white-letter d-flex align-items-center justify-content-center"
+                                >
+                                    <span class="material-symbols-outlined m-1">
+                                        mode_standby
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="blue-letter">1/16</div>
+                                    <div class="gray-letter">BẢN SỬ DỤNG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DATA CONTAINER -->
+            <div class="container-fluid container-md data-container">
+                <div class="row container-fluid justify-content-between">
+                    <div class="col">
+                        <div class="row">
+                            <div
+                                class="col border col-lg-12 p-0 mb-2 badge-light px-2 py-1 data-container-item"
+                            >
+                                <div
+                                    class="d-flex justify-content-between mb-2"
+                                >
+                                    <div
+                                        class="blue-letter data-container-item-title"
+                                    >
+                                        DOANH THU TRONG 7 NGÀY TRƯỚC
+                                    </div>
+                                    <select
+                                        name="cars"
+                                        id="cars"
+                                        class="px-3 py-1 text-center"
+                                    >
+                                        <option
+                                            value="today"
+                                            class="text-center"
+                                        >
+                                            7 ngày trước
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <canvas
+                                    class="mb-2"
+                                    id="myChart_bar"
+                                    style="width: 100%; height: 310px"
+                                ></canvas>
+                                <script src="./js/chart_1.js"></script>
+                            </div>
+                            <div
+                                class="col border col-lg-5 data-container-item px-1 badge-light"
+                            >
+                                <div
+                                    class="d-flex justify-content-between my-2"
+                                >
+                                    <div
+                                        class="blue-letter data-container-item-title"
+                                    >
+                                        HÀNG HÔM NAY
+                                    </div>
+                                    <select
+                                        name="cars"
+                                        id="cars"
+                                        class="px-3 py-1 text-center"
+                                    >
+                                        <option
+                                            value="today"
+                                            class="text-center"
+                                        >
+                                            Hôm nay
+                                        </option>
+                                    </select>
+                                </div>
+                                <ul class="list-group list-product">
+                                    <li class="bg-secondary p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="bg-secondary p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="bg-secondary p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="bg-secondary p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                    <li class="p-1">
+                                        sữa chua chân châu cốt dừa
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="col col-lg-7 pl-1 pr-0 data-container-item"
+                            >
+                                <div
+                                    class="badge-light pt-1 px-1 border"
+                                    style="height: 100%; width: 100%"
+                                >
+                                    <div class="d-flex justify-content-between">
+                                        <div
+                                            class="blue-letter data-container-item-title"
+                                        >
+                                            DOANH THU THEO CHI NHÁNH
+                                        </div>
+                                        <select
+                                            name="cars"
+                                            id="cars"
+                                            class="px-3 py-1 text-center"
+                                        >
+                                            <option
+                                                value="today"
+                                                class="text-center"
+                                            >
+                                                7 ngày trước
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <canvas
+                                        class="mb-2"
+                                        id="myChart_pie"
+                                        style="width: 100%; height: 90%"
+                                    ></canvas>
+                                    <script src="./js/chart_2.js"></script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col col-lg-3 mx-1 mb-1 data-container-item data-container-news"
+                    >
+                        <div
+                            class="row border badge-light align-content-center"
+                        >
+                            <div
+                                class="col col-lg-12 d-flex justify-content-between p-1"
+                            >
+                                <div class="d-flex align-items-center">
+                                    <span class="blue-letter letter-font mx-1"
+                                        >HOTLINE:
+                                    </span>
+                                    <span class="red-letter letter-font"
+                                        >1900 4515</span
+                                    >
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-around mx-1"
+                                    id="contact-icon"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        call
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="row align-content-center justify-content-between app-link my-3"
+                        >
+                            <div class="col col-6" id="ios">
+                                <div
+                                    class="badge-light d-flex align-items-center app"
+                                >
+                                    <div
+                                        class="logo-app px-3 py-2 mr-2 border-right"
+                                    >
+                                        <i class="fa-brands fa-apple"></i>
+                                    </div>
+                                    <div class="app-name">
+                                        <div class="letter-font">
+                                            Tải ứng dụng
+                                        </div>
+                                        <div class="letter-font">APP STORE</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-6 p-0" id="android">
+                                <div
+                                    class="badge-light d-flex align-items-center app"
+                                >
+                                    <div
+                                        class="logo-app px-3 py-2 mr-2 border-right"
+                                    >
+                                        <i class="fa-brands fa-android"></i>
+                                    </div>
+                                    <div class="app-name">
+                                        <div class="letter-font">
+                                            Available on the
+                                        </div>
+                                        <div class="letter-font">
+                                            ANDROID MARKET
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="row border badge-light align-content-center my-2"
+                        >
+                            <div
+                                class="col col-lg-12 d-flex justify-content-between p-1"
+                            >
+                                <div class="d-flex align-items-center">
+                                    <span class="blue-letter letter-font mx-1"
+                                        >LỊCH ĐẶT PHÒNG BÀN
+                                    </span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-around mx-1"
+                                    id="contact-icon"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        calendar_month
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="row border badge-light align-content-center my-2"
+                        >
+                            <div
+                                class="col col-lg-12 d-flex justify-content-between p-1"
+                            >
+                                <div class="d-flex align-items-center">
+                                    <span class="blue-letter letter-font mx-1"
+                                        >GỬI SMS
+                                    </span>
+                                </div>
+                                <div
+                                    class="d-flex align-items-center justify-content-around mx-1"
+                                    id="contact-icon"
+                                >
+                                    <span class="material-symbols-outlined">
+                                        mail
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="row border badge-light align-content-center my-2"
+                        >
+                            <div
+                                class="col col-lg-12 d-flex justify-content-between p-1 flex-column"
+                            >
+                                <div class="d-flex align-items-center">
+                                    <span class="blue-letter letter-font mx-1"
+                                        >HOẠT ĐỘNG GẦN ĐÂY
+                                    </span>
+                                </div>
+                                <div class="mt-2">
+                                    <ul class="ml-0 pl-0">
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="d-flex border-bottom pt-1 pb-2 position-relative"
+                                        >
+                                            <div
+                                                class="mess-icon mr-2 d-flex align-items-center justify-content-center"
+                                            >
+                                                <span
+                                                    class="material-symbols-outlined white-letter"
+                                                >
+                                                    shopping_cart
+                                                </span>
+                                            </div>
+                                            <div class="mess-content">
+                                                <span
+                                                    class="blue-letter letter-font"
+                                                    >Nv1_bcqn</span
+                                                >
+                                                <span class="letter-font-sm"
+                                                    >đã bán hàng với giá trị
+                                                    10.000đ</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="time-post position-absolute"
+                                            >
+                                                <i class="fa-solid fa-clock"></i
+                                                ><span class="ml-1"
+                                                    >một giờ trước</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

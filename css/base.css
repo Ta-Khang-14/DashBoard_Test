@@ -1,0 +1,33 @@
+:root {
+    --blue-main: #0072bb;
+    --white-letter: #ffffff;
+    --red-letter: #e34d41;
+    --blue-hover: #0096f4;
+    --gray-letter: #a3a9b9;
+    --gray-bg: #e7ebee;
+    --red-bg: #e55749;
+    --green-bg: #81b11d;
+    --green-char: #06941a;
+}
+ul {
+    list-style: none;
+}
+.white-letter {
+    color: var(--white-letter) !important;
+}
+.red-letter {
+    color: var(--red-letter) !important;
+}
+.blue-letter {
+    color: var(--blue-main) !important;
+}
+.gray-letter {
+    color: var(--gray-letter) !important;
+}
+.letter-font {
+    font-size: 12px;
+    font-weight: 500;
+}
+.letter-font-sm {
+    font-size: 12px !important;
+}
