@@ -31,3 +31,13 @@ ul {
 .letter-font-sm {
     font-size: 12px !important;
 }
+
+@media (max-width: 767.98px) {
+    #myChart_bar,
+    #mychart_pie {
+        height: 400px !important;
+    }
+    .app .app_name div:last-child {
+        font-size: 8px;
+    }
+}
